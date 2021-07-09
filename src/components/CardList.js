@@ -9,7 +9,7 @@ const CardList = ({films}) => {
     return (
         <div>
             {
-                films.slice(0,500).map((data, i) => {
+                films.slice(0,400).map((data, i) => {
                     return (
                         <Card 
                             key={i} 
