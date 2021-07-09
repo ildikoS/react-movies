@@ -5,9 +5,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: linear-gradient(to left, rgb(95, 110, 179) 0%, rgb(15, 32, 107) 100%); /* w3c */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+  width: 300px;
+  max-width: 100%;
+}
+
+.movie{
+  overflow: hidden;
+  width: 300px;
+}
+
+.movie-over{
+  display: flex;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie-over{
+  transform: translateY(0%);
 }
