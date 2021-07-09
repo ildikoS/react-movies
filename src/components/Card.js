@@ -9,7 +9,8 @@ const Card = ({id, title, poster, overview, release_date, genres}) => {
                 <p>
                     { genres ?
                     genres.map(function(genre, index){
-                        return `${genre}/`;
+                        if(index===0) return genre;
+                        else return `/${genre}`;
                     })
                 : 'not defined' }
                 </p>
