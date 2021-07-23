@@ -12,7 +12,7 @@ const Card = ({id, title, poster, overview, release_date, genres}) => {
                         if(index===0) return genre;
                         else return `/${genre}`;
                     })
-                : 'not defined' }
+                : '' }
                 </p>
                 <div className='movie-over dib br3 bw2 bg-white absolute bottom-0 left-0 right-0'>
                     <p>{overview}</p>
